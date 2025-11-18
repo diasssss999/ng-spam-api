@@ -9,13 +9,8 @@
   "routes": [
     {
       "src": "/api/ngspam",
-      "dest": "api/ngspam.py",
-      "methods": ["POST", "OPTIONS"]
+      "dest": "/api/ngspam.py",
+      "methods": ["GET", "POST", "OPTIONS"]
     }
-  ],
-  "functions": {
-    "api/ngspam.py": {
-      "maxDuration": 60
-    }
-  }
+  ]
 }
