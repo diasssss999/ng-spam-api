@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/ngspam.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/ngspam",
+      "dest": "api/ngspam.py",
+      "methods": ["POST", "OPTIONS"]
+    }
+  ],
+  "functions": {
+    "api/ngspam.py": {
+      "maxDuration": 60
+    }
+  }
+}
